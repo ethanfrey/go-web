@@ -20,6 +20,8 @@ Or a minimalistic form:
 
 Since most handlers just have request and response, how do we pass information between levels (like the logged in user from auth middleware down into handler function that wants the current user...).  Most contexts are implemeneted as `map[interface{}]interface{}`, to leave the logic to you.
 
+This is a great introduction (much better than my points below): https://elithrar.github.io/article/map-string-interface/
+
 *Gorilla*
 
 They provide a nice global context object, you just have to remember to clean it up at the end of every request.
@@ -28,8 +30,10 @@ They provide a nice global context object, you just have to remember to clean it
 *Native golang*
 
 As of golang 1.7, every http.Request object will have this as an extra field.  Probably the easiest way in the future:
-	* https://github.com/golang/go/issues/14660#issuecomment-217195496
-	* https://godoc.org/golang.org/x/net/context
+	* https://github.com/golang/go/issues/14660#issuecomment-217195496  (statement it is in 1.7)
+	* https://godoc.org/golang.org/x/net/context  (godocs for the library)
+	* https://blog.golang.org/context  (how to use it - patterns)
+
 
 *Custom Framework*
 

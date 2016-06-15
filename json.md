@@ -24,3 +24,8 @@ https://gowalker.org/github.com/stretchr/testify/assert#JSONEq
 Nice article here https://blog.gopheracademy.com/birthday-bash-2014/advanced-reflection-with-go-at-hashicorp/ and some code https://github.com/mitchellh/mapstructure that can take over the type mapping from standard json.
 
 Why?  Well, if we want to inspect a top level key (eg type) before casting it to a specific type.  Or if we want to see which input keys were unusued, rather than ignoring them.  Example code here: https://godoc.org/github.com/mitchellh/mapstructure#Decode  In particular, look at Metadata for reporting unused variables, Errors for good reporting, and WeeklyTypedInput for handling ints like "123" gracefully. And a number of DecodeHooks that can be used.  Kind of like custom marshalling/unmarshalling of json, but it seems more powerful.
+
+## Or use something else...
+
+Message Pack? http://msgpack.org/index.html
+Protocol Buffers??? https://github.com/golang/protobuf

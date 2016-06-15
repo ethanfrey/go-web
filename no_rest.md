@@ -24,3 +24,11 @@ This is a full-featured framework for building microservices, including service 
 They are fully commited to golang, and build on some external services to provide features, notably consul. https://github.com/micro/go-micro#features However, this can be adjusted by plugins, and they support using NATS not only as a message broker, but also for rpc and service discovery: https://blog.micro.mu/2016/04/11/micro-on-nats.html
 
 A nice overview of the project is on the FAQ: https://github.com/micro/micro/wiki/FAQ
+
+## Distributed Systems
+
+Yes, that is the proper name for all these post-REST systems.  There are plenty of interesting CS papers in this area.  Maybe check out:
+
+  * http://bravenewgeek.com/from-the-ground-up-reasoning-about-distributed-systems-in-the-real-world/
+  * https://medium.com/@jlouis666/how-to-build-stable-systems-6fe9dcf32fc4#.3j1odjamv
+  
