@@ -16,3 +16,11 @@ This is bi-directional RPC over websockets and service discovery, rolled into on
 
 https://github.com/koding/kite
 
+
+## Micro
+
+This is a full-featured framework for building microservices, including service discovery, rpc calls, message brokering, etc. See the list here: https://github.com/micro/micro#the-ecosystem 
+
+They are fully commited to golang, and build on some external services to provide features, notably consul. https://github.com/micro/go-micro#features However, this can be adjusted by plugins, and they support using NATS not only as a message broker, but also for rpc and service discovery: https://blog.micro.mu/2016/04/11/micro-on-nats.html
+
+A nice overview of the project is on the FAQ: https://github.com/micro/micro/wiki/FAQ
