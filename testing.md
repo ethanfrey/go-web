@@ -16,3 +16,9 @@ Here are some useful packages to try out:
   * https://elithrar.github.io/article/testing-http-handlers-go/
   * 
   * 
+
+
+## Running tests
+
+Nice trick with inotify wait to auto-run locally on save:
+  http://dave.cheney.net/2016/06/21/automatically-run-your-packages-tests-with-inotifywait

@@ -6,12 +6,18 @@ https://golang.org/pkg/encoding/json/
 
 However, there are a number of tips and tricks.
 
-
 ## Custom marshalling for flexible json encodings
 
 http://choly.ca/post/go-json-marshalling/
 
 http://attilaolah.eu/2013/11/29/json-decoding-in-go/
+
+## Setting default values
+
+Simply fill a struct with some values *before* passing it into `json.Unmarshall()`, the fields that were not present in the json will remain their original state.  However, empty fields (like ""), *will* override the defaults
+
+http://stackoverflow.com/questions/30445479/how-to-specify-default-values-when-parsing-json-in-go
+
 
 ## Testing JSON
 
